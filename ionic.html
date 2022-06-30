@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionic</title>
+</head>
+<body>
+
+    <h1> Ionic </h1>
+    <ul>
+        <li>
+            O ionic framework é um kit de desenvolvimento de software (SDK),"SOFTWARE DEVELOPMENT KIT"
+            utilizado para desenvolver aplicativos moveis hibridos,com javascript,html,css;
+        </li>
+
+    </ul>
+
+    <h1>App Hibrido ou Nativo qual a diferença?</h1>
+    <h2>Apps hibridos</h2>
+    <ul>
+        <li>
+            Um app hibrido ele basicamente roda dentro de um celular,porem ele precisa de mais um componente; 
+        </li>
+        <li>
+            O ionic utiliza uma WebView que lembra um pouco um browser e dentro dessas WebView é onde o seu app ira rodar;
+        </li>
+        <li>
+            A grande diferença de uma webview é que ela basicamente renderiza a interface do seu app,assim como o browser faz quando criamos um site,porem a grande diferença é que,
+            a webview tambem acessa os recursos nativos do celular oque um browser não consegue fazer,podendo então acessarmos fotos,camera etc...
+        </li>
+        <li>
+            Basicamente,desenvolvemos os codigos html,css,javascript,esses codigos são rodados dentro dessa webview e essa webview que roda dentro do celular;
+        </li>
+        <li>
+            Porque utilizar o hibrido?<br>
+            É uma maneira produtiva de voce construir os seus apps;
+        </li>
+        <li>
+            <h2>Plataformas</h2>
+            Android e iOS
+        </li>
+        
+    </ul>
+
+    <h2>Apps nativos</h2>
+    <ul>
+        <li>
+            Quando criamos um app nativo,ele depois de criado,é rodado,
+            diretamente dentro do celular,ou seja,ele nao possui essa webview;
+        </li>
+        <li>
+            Isso acaba trazendo algumas vantagens de acesso aos recursos do celular,pois como nao temos um recurso intermediario,essa execução é muito mais fluida,
+            ela é muito mais rapida,mais performatica;
+        </li>
+    </ul>
+
+    <h3>Utilizar nativo ou hibrido ?</h3>
+    <ul>
+        <li>
+            <h3>Nativo</h3>
+        </li>
+        <li>
+            Depende do projeto,caso seu projeto utilize muitos recursos nativos,por exemplo,geolocalização,câmera etc...talvez seria interessante desenvolver de forma nativa;
+            ou seja,como falamos a forma nativa é muito mais  performatica;
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <h3>Hibrido</h3>
+        </li>
+        <li>
+            Caso você  for desenvolver algum app que consuma muitos recursos de site,ai sim seja mais vantajoso utilizar o ionic
+        </li>
+    </ul>
+
+    <h1>Vantagens de utilizar o Ionic</h1>
+    <ul>
+        <li>
+            Utilizamos html,css,javascript para criar o app;
+        </li>
+        <li>
+            Quando desenvolvemos apps para android nos utilizamos a linguagem Java e utilizamos android studio,
+            ou seja, os devs precisariam aprender a linguagem java e utilizar o android studio para desenvolver o app;
+            O mesmo acontece para o iOS a pessoa precisaria aprender swift por exemplo e utilizar uma IDE que no caso seria o xcode;
+        </li>
+        <li>
+            Produtividade(temos o mesmo codigo para ambas as plataformas)
+        </li>
+    </ul>
+
+    <h1>Comandos iniciais</h1>
+    <ul>
+        <li>
+            ionic start myApp tabs --type para definir o framework angular ou react <br>
+            myApp = blank,tabs,sidemenu
+        </li>
+        <li>
+            blank => basicamente é um projeto vazio 
+        </li>
+        <li>
+            tabs => projeto com abas para você navegar em seu projeto
+        </li>
+        <li>
+            sidemenu => cria um projeto com um menu lateral
+        </li>
+        <li>
+            Apos escolher o framework recebemos uma pergunta:
+            se você quer integrar seu novo aplicativo com o "CAPACITOR",(ferramenta  que permite a criação do app com ionic) e gere uma versao nativa para executar com android studio ou ios com xcode;
+        </li>
+        <h4>Ionic generate</h4>
+        <li>
+            Ionic generate => pergunta oque voce gostaria de gerar e nos tras algumas opcções;
+            podemos gerar diretamente como por exemplo:
+            ionic generate oque desejamos gerar e o nome do arquivo que iremos gerar;
+        </li>
+        <li>
+            <h3>iniciando projeto</h3>
+        </li>
+        <li>
+            ao executar o comando ionic serve iremos iniciar o nosso projeto;
+            PS: lembrando que devemos estar com a pasta aberta no terminal
+        </li>
+    </ul>
+
+    <h1>Estrutura do ionic</h1>
+    <ul>
+        <li>
+            ion header =  basicamente cria a area superior(cabeçalho);
+            <!-- [translucent = true] faz com que o ion header fique mais transparente-->
+            por padrao ja vem o  header com position sticky top
+        </li>
+        <li>
+            ion tooblar = cria uma toolbar;
+            A Barra de ferramentas é um componente utilizado pelos softwares com interface gráfica com a finalidade de 
+            permitir uma ação rápida por parte do usuário, facilitando o acesso a funções do programa.
+        </li>
+        <li>
+            ion title =  seria nosso logo 
+        </li>
+        <li>
+            Ou seja da sombra pra cima ion header da sombra pra baixo ion content
+        </li>
+        <li>
+            ion content = basicamente define toda a area de conteudo;
+            <!-- [full screen]=true para que ele ocupe sempre a tela inteira recomendação padrao-->
+        </li>
+        <li>
+            ion content  =  onde iremos desenvolver a estrutura de codigos que ja estamos mais familiarizados
+        </li>
+        <li>
+            ion footer = nosso rodapé
+        </li>
+        <li>
+            <h2>Procurar na documentação sobre css utilities</h2>
+            basicamente mesma estrutura utilizada no bootstrap
+        </li>
+        <li>
+            Para definirmos uma classe devemos utilizar o metodo padrao seguido por ion- a propriedade
+        </li>
+    </ul>
+
+    <h1>Componentes</h1>
+    <ul>
+        <li>
+            Primeiro iniciaremos trabalhando na pasta src/home...
+        </li>
+        <li>
+            nela  temos alguns documentos especificos,como html,typescript...
+        </li>
+        <li>
+            lembrando que sempre que quisermos adicionar alguma estrutura de pagina,podemos colocar dentro de home;
+        </li>
+    </ul>
+    
+    
+</body>
+</html>

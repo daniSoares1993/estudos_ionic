@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um pouco de Angular</title>
+</head>
+<body>
+
+    <h1>Explicando o Angular e TypeScript</h1>
+    <h2>Framework Angular</h2>
+    <ul>
+        <li>
+            Junto com o Ionic iremos utilizar o framework angular;
+        </li>
+        <li>
+            Utilizando o ionix start,nos ja criamos uma base de estrutura
+        </li>
+        <li>
+            O Angular é um framework modular que utiliza o javascript;
+        </li>
+    </ul>
+
+    <h2>Estrutura de projeto Angular</h2>
+    <ul>
+        <li>
+            Estrutura de arquivos com algumas pastas;
+            dist,e2e,node_modules,src  e alguns arquivos json;
+        </li>
+        <li>
+            Pasta src => app => Arquivos relacionados ao seu app => home indica a pagina inicial do app;
+        </li>
+        <li>
+            Pasta src => assets => onde conseguimos colocar recursos como imagens...
+        </li>
+        <li>
+            pasta src => environments => onde fazemos as configurações de ambiente
+        </li>
+        <li>
+            pasta src => theme => temos algumas predefiniçoes de scss;
+        </li>
+        <li>
+            src => global.scss aquivos de importação de estilos;
+        </li>
+        <li>
+            src => index.html => nele que ficarao os codigos e onde serao,
+            carregados os componentes do angular dentro da pagina inicial do seu app.
+        </li>
+    </ul>
+    <h4>SRC => INDEX.HTML</h4>
+    <ul>
+        <li>
+            Dentro de index.html,teremos uma estrutura dentro do body,
+            nela teremos uma tag app-root,dentro dessa tag que serao feitos os carregamentos
+            de nossas paginas;
+        </li>
+        <li>
+            main.ts => faz o import de alguns recursos do angular
+        </li>
+    </ul>
+
+    <h3>Módulo oque é?</h3>
+    <ul>
+        <li>
+            Basicamente modulo é  uma maneira de voce organizar suas aplicação em blocos de funcionaliades,
+            e esses blocos de funcionalidades são  chamados de componentes
+        </li>
+        <li>
+            Um modulo ele serve para organizar sua aplicação em blocos de funcionalidades;
+        </li>
+        <li>
+            Imagine que voce tenha uma aplicação e dentro dessa 
+            aplicação,ela tenha um modulo financeiro;
+        </li>
+        <li>
+            modulo fincandeiro => componentes ;
+            componentes => lista de contas;
+            compontentes => adicionar uma conta;
+            componentes => graficos
+        </li>
+        <li>
+             Ou seja todos esses componentes ficam dentro de uma estrutura maior,
+             dentro de uma aplicação com blocos de finalidades que chamamos de modulos
+        </li>
+    </ul>
+    <h2>TypeScript</h2>
+    <ul>
+        <li>
+            É  uma maneira de adicionar ainda mais recursos ao javascript;
+        </li>
+        <li>
+            Dentre as suas caracteristicas ele trabalha a compatibilidade entre os navegadores;
+        </li>
+    </ul>
+
+    <h2>App.componentes.ts/html</h2>
+    <ul>
+        <h3>App.componentes.ts</h3>
+        <li>
+            Onde temos  a inicialização de alguns recursos que iremos utilizar.
+        </li>
+        <h3>app.componentes.html</h3>
+        <li>
+            temos o ion app /ion router outlet que cria as rotas da nossa aplicação.
+        </li>
+        <li>
+            Basicamente as páginas os caminhos que queremos utilizar para abrir uma determinada pagina;
+        </li>
+        <h3>App.routing.modules.ts</h3>
+        <li>
+            Define as rotas quando escrevemos em nossa aplicação
+        </li>
+    </ul>
+
+    <h2>Main.ts</h2>
+    <p>
+        Faz o carregamento do nosso modulo inicial,no caso app.module.ts,
+        app.module.ts => inicializa o nosso componente [app.component];
+        app.component.ts => faz a inicialização dos componentes,e dentro dele é onde iremos
+        carregar o nosso component.html
+    </p>
+
+    <h2>Angular</h2>
+    <p>
+        Dentro de nossa home,podemos inserir os conteudos de nossa pagina,e adicionar variaveis;
+    </p>
+    <h4>Variaveis {{}}</h4>
+    <p>
+        Para adicionar variaveis podemos inserir { { variaveis } } => chaves dentro de chaves;
+        por exemplo,se eu tivesse alguma variavel que estiver dentro de homePage.ts,eu conseguiria utilizar ela,
+        entre as chaves duplas
+    </p>
+    <p>
+        Ou seja definimos um atributo dentro de home.page.ts e defini o carregamento dele dentro de home.page.html com {{}}
+    </p>
+
+</body>
+</html>

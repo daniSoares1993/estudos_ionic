@@ -1,0 +1,385 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1>Olá mundo</h1>
+  <h2>Estou utilizando o ionic</h2>
+  
+  <h2>Botões em Ionic</h2>
+ <!-- criação de botões com ionic -->
+  <ion-button>  Padrão </ion-button>
+
+  <!-- Botão com link criamos a estrutura de button e adicionamos o href-->
+  <ion-button href="http://google.com">  Link </ion-button>
+
+    <!--Padrões de cores igual ao bootstrap-->
+    <h4>Cores</h4>
+   <ion-button color="primary">Primary</ion-button>
+   <ion-button color="secondary">Secondary</ion-button>
+   <ion-button color="tertiary">Tertiary</ion-button>
+
+   <ion-button color="success">success</ion-button>
+   <ion-button color="warning">warning</ion-button>
+   <ion-button color="danger">danger</ion-button>
+   <ion-button color="light">light</ion-button>
+   <ion-button color="medium">merdium</ion-button>
+   <ion-button color="dark">dark</ion-button>
+
+   <h4>Botões expandidos</h4>
+   <!-- Expand full botao ocupa todo o espaçamento da tela-->
+   <ion-button expand="full" color="medium" >Expand full</ion-button>
+
+   <!-- expand block ocupa todo o espaçamento porem com border-radius 5px mais ou menos-->
+   <ion-button expand="block" color="warning" >Expand block</ion-button>
+
+   <h4>Botões arredondados/shape round</h4>
+   <!-- shape(forma em ingles),com essa proprieade definimos a forma do botao -->
+   <ion-button shape="round" color="success">Shape round</ion-button>
+
+   <h4>Botões com preenchimento/fill</h4>
+   <!-- fill = preenchimento cria uma borda e  altera o backgorund-->
+   <ion-button fill="outline" color="dark">Fill Outline</ion-button>
+
+   <h4>Icones</h4>
+   <ion-button> 
+     <!--Podemos utilizar o slot para posicionar o icone,start no comeco e end para o final-->
+     <ion-icon name="star" slot="start"></ion-icon>
+     Ícone
+   </ion-button><br>
+
+   <ion-button> 
+    <!--Podemos utilizar o slot para posicionar o icone,start no comeco e end para o final-->
+    <ion-icon name="star" slot="end"></ion-icon>
+    Ícone
+  </ion-button><br>
+
+  <ion-button> 
+    <!--Slot icon-only para deixar somente o icone-->
+    <ion-icon name="arrow-back-outline" slot="icon-only"></ion-icon>
+  </ion-button>
+
+  <h4>Tamanhos de botões</h4>
+  <!-- atraves do atributo size definimos o tamanho do botao-->
+  <ion-button size="large">Large</ion-button>
+  <ion-button size="Medium">Medium</ion-button>
+  <ion-button size="Small">Small</ion-button>
+
+  <h4>Listas & Cards</h4>
+  <h5>Cards</h5>
+  <!-- podemos utilizar o mode para alterar o mode de exibição Ios ou md-->
+  <ion-card color="primary" mode="ios">
+    <ion-img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></ion-img>
+  <!--Conteudos ion-card-content-->
+    <ion-card-content>
+      <ion-card-title>
+        Ion card title é  uma deficnição de titulo
+      </ion-card-title>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo ipsum suscipit ducimus id necessitatibus explicabo, recusandae eligendi laborum harum delectus, facilis officiis laudantium eius similique totam magni perferendis sed!
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="primary" mode="md">
+    <ion-img src="https://source.unsplash.com/random/800x600"></ion-img>
+  <!--Conteudos ion-card-content-->
+    <ion-card-content>
+      <ion-card-title>
+        Ion card title é  uma deficnição de titulo
+      </ion-card-title>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo ipsum suscipit ducimus id necessitatibus explicabo, recusandae eligendi laborum harum delectus, facilis officiis laudantium eius similique totam magni perferendis sed!
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <h4>Cartões com cabeçalho</h4>
+  <ion-card color="secondary">
+  <!-- para definição de card com cabeçalho-->
+    <ion-card-header>
+      <ion-card-title>
+        Ion card title é  uma deficnição de titulo
+      </ion-card-title>
+      <ion-card-subtitle>
+        lorem ipsimdolorem sit amet aliquid iure sequi a nesciunt
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-img src="https://source.unsplash.com/random/800x600"></ion-img>
+
+    <ion-card-content>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam atque eos distinctio maxime quo autem impedit facere magnam dolores,
+         aliquid iure sequi a nesciunt quas ea rerum praesentium, dolorum eum.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <h4>Card com listagem de itens</h4>
+   <ion-card>
+     <!-- inserimos uma tag ion-item-->
+     <ion-item href="http://google.com">
+       <!-- dentro de item podemos inserir um ion-label-->
+       <!-- ion item li - ion label conteudo-->
+        <ion-label>
+          1.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </ion-label>
+      </ion-item>
+
+      <ion-item href="http://google.com">
+        <ion-label>
+          2.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </ion-label>
+      </ion-item>
+   </ion-card>
+
+   <h4>Configuração de listas</h4>
+   <!-- 
+     assim como nossa estrutura base de html
+    nos utilizamos:
+    ion-list = "UL"
+    ion-item = LI
+    ion-label = Conteudo
+   -->
+   <ion-list>
+     <ion-item>
+        <ion-label>
+          1.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+       </ion-label>
+     </ion-item>
+     <ion-item>
+      <ion-label>
+        2.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+     </ion-label>
+   </ion-item>
+   </ion-list>
+
+   <h4>Listas com avatar</h4>
+   <ion-list>
+     <ion-item>
+  <!--Ele cria um arredondamento,geralemnte usado em nosso perfil do instagram,linkedin-->
+        <ion-avatar>
+          <ion-img src="https://source.unsplash.com/random/200x200">
+          </ion-img>
+        </ion-avatar>
+        <ion-label>
+          1.Iremos introduzir um avatar
+        </ion-label>
+     </ion-item>
+
+     <ion-item>
+    <!-- adiciona um espaçamento entre o avatar e o conteudo-->
+            <ion-avatar slot="start">
+              <ion-img src="https://source.unsplash.com/random/200x200">
+              </ion-img>
+            </ion-avatar>
+            <ion-label>
+              João Padro Silva
+            </ion-label>
+         </ion-item>
+   </ion-list>
+
+  <h4>Listas com slide</h4>
+   <ion-list>
+     <!-- cria uma opção para arrastar um determinado conteudo e mostrar algo depois de arrastado-->
+     <ion-item-sliding>
+       <ion-item>
+         <ion-label> Daniel Soares arraste para a esquerda </ion-label>
+       </ion-item>
+<!-- podemos criar uma opçao para arrastaro conteudo para o lado e mostrar outro "por baixo"-->
+<!-- podemos utilizar o side para alterar onde sera exibido,arrastar para direita ou esquerda utilizando start ou end(padrao)-->
+       <ion-item-options side="end">
+<!-- cria as opções depois de arrastar o conteudo , similar ao do direct no instagrem-->
+        <ion-item-option color="danger">Excluir</ion-item-option>
+        <ion-item-option color="success">Alterar</ion-item-option>
+       </ion-item-options>
+     </ion-item-sliding>
+   </ion-list>
+
+   <h4>Configurando posicionamento do label (config entrada)(floating, fixed e stacked)</h4>
+   <ion-item>
+<!--Atributo  position:
+floating - faz com que o conteudo do label suba um pouco e tenha uma alteração de cor
+fixed - o label fica fixo sem nenhuma alteração
+stacked -o label ja fica posicionado acima do input e tem alteração de cor
+-->
+     <ion-label position="floating">Seu nome</ion-label>
+     <ion-input></ion-input> <br>
+   </ion-item>
+
+   <ion-item>
+     <ion-label position="fixed">Seu nome</ion-label>
+     <ion-input></ion-input>
+   </ion-item>
+
+   <ion-item>
+    <ion-label position="stacked">Seu nome</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <h4>Entrada de dados (value,placeholder,clearinput)</h4>
+  <!-- 
+     value =  definimos um valor inicial
+     placeholder = visualização de algum conteudo que sera mostrado dentro do input
+     clearinput = cria um botao que  ja apaga todo o conteudo de dentro do input ou seja,  backspace plus rs.
+  -->
+  <ion-item>
+    <ion-label>Value</ion-label>
+    <ion-input value="Daniel Soares"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>placeholder</ion-label>
+    <ion-input placeholder="placeholder"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>clearInput</ion-label>
+    <ion-input clearInput ></ion-input>
+  </ion-item>
+
+  <h4>Tipos de entrada de dados(text,number,password,email,tel,url,search)</h4>
+  <!-- 
+    text = definição padrao,podem ser inseridos variados tipos de dados;
+    number = definição apenas para numeros
+    password =  esconde as informações digitadas
+    email = teclado que facilita a digitação do email
+    telefone = aparece basicamente um teclado para digitar telefone on mobile
+    url = facilita a digitação da url aparecendo uma barra
+    search = aparece um botao de pesquisa para o usuario
+  -->
+
+  <ion-item>
+    <ion-label>Text</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>number</ion-label>
+    <ion-input type="number" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>number</ion-label>
+    <ion-input type="number" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>password</ion-label>
+    <ion-input type="password" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>email</ion-label>
+    <ion-input type="email" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>telefone</ion-label>
+    <ion-input type="tel" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>URL</ion-label>
+    <ion-input type="url" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Search</ion-label>
+    <ion-input type="search" ></ion-input>
+  </ion-item>
+
+<h4>Sistemas de grid</h4><!-- olhar a documentação e curso de bootstrap-->
+  <!-- 
+    sistema de grid baseado em 12 colunas;
+    estruturada por:
+    ion-grid >>> ion-row >>> ion-column
+
+    ion-grid - define o sistema de grid
+    ion-row - define a linha 
+    ion-col - define a coluna
+  -->
+
+  <!--  definição de grid-->
+  <ion-grid>
+  <!-- definição de linha-->
+    <ion-row>
+  <!-- definição de coluna-->
+  <!-- com a propriedade size nos podemos definir a qtde de grids que queremos utilizar-->
+      <ion-col size="4">Conteúdo 1 col 4</ion-col>
+      <ion-col size="8">Conteúdo 2 col 8</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4"> teste 1</ion-col>
+      <ion-col size="4"> teste 2</ion-col>
+      <ion-col size="4"> teste 3</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h4>Grid offset</h4>
+  <!-- propriedade of set da o espaçamento restante do grid entre os grid  da coluna
+  como se foce um space-between-->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6"> teste</ion-col>
+      <ion-col size="3" offset="3"> teste</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h4>Alinhamentos de conteudos dentro dos grids(ion-text-start,ion-text-end,ion-text-center)</h4>
+
+  <ion-grid>
+  <!-- 
+    atraves da classe:
+    ion-text-end alinhamento de conteudo no final do grid
+    ion-text-center alinhamento do conteudo ao centro do grid 
+    ion-text-start alinhamento do conteudo ao  inicio do grid
+    famoso text-align
+  -->
+    <ion-row class="ion-text-start">
+      <ion-col size="4">1</ion-col>
+      <ion-col size="4">2</ion-col>
+      <ion-col size="4">3</ion-col>
+    </ion-row>
+
+    <ion-row class="ion-text-center">
+      <ion-col size="4">1</ion-col>
+      <ion-col size="4">2</ion-col>
+      <ion-col size="4">3</ion-col>
+    </ion-row>
+
+    <ion-row class="ion-text-end">
+      <ion-col size="4">1</ion-col>
+      <ion-col size="4">2</ion-col>
+      <ion-col size="4">3</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h4>Alinhamentos de conteudo na vertical</h4>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-start">
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3 <br> +  <br></ion-col>
+    </ion-row>
+
+    <br><br>
+
+    <ion-row class="ion-align-items-center">
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3 <br> +  <br></ion-col>
+    </ion-row>
+
+    <br><br>
+
+    <ion-row class="ion-align-items-end">
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3 <br> +  <br></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  </ion-content>
+
+<ion-footer>
+  <h1>roadpé</h1>
+</ion-footer>
